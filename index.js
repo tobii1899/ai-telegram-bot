@@ -1,10 +1,10 @@
 // index.js
 import express from "express";
-import dotenv from "dotenv";
+//import dotenv from "dotenv";
 import Airtable from "airtable";
 import { Blob } from "buffer";
 
-dotenv.config();
+//dotenv.config();
 const app = express();
 app.use(express.json()); // Telegram sendet JSON
 
