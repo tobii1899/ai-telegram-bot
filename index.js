@@ -4,6 +4,11 @@ import express from "express";
 import Airtable from "airtable";
 import { Blob } from "buffer";
 
+console.log("DEBUG ENV:");
+console.log("AIRTABLE_API_KEY:", process.env.AIRTABLE_API_KEY);
+console.log("AIRTABLE_BASE_ID:", process.env.AIRTABLE_BASE_ID);
+console.log("AIRTABLE_TABLE_NAME:", process.env.AIRTABLE_TABLE_NAME);
+
 //dotenv.config();
 const app = express();
 app.use(express.json()); // Telegram sendet JSON
